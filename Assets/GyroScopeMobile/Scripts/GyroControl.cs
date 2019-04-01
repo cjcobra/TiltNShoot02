@@ -3,13 +3,13 @@ using System.Collections;
 
 public class GyroControl : MonoBehaviour 
 {
-	private bool gyroBool;
-	private Gyroscope gyro;
-	private Quaternion rotFix;
+//	private bool gyroBool;
+//	private Gyroscope gyro;
+//	private Quaternion rotFix;
 
 	void Start() 
 	{
-		GameObject camParent = GameObject.Find("gyroscopeCamera");
+/*		GameObject camParent = GameObject.Find("gyroscopeCamera");
 		gyroBool = SystemInfo.supportsGyroscope;
 		
 		if (gyroBool) 
@@ -20,14 +20,14 @@ public class GyroControl : MonoBehaviour
 			camParent.transform.eulerAngles = new Vector3(90,180,0);
 			rotFix = new Quaternion(0,0,1,0);
 		} 
-	}
+*/	}
 	
 	void Update () 
 	{
-		if (gyroBool) 
-		{
-			Quaternion camRot = gyro.attitude * rotFix;
-			transform.localRotation = camRot;
-		}
+//		if (gyroBool) 
+//		{
+//			Quaternion camRot = gyro.attitude * rotFix;
+//			transform.localRotation = camRot;
+//		}
 	}
 }
