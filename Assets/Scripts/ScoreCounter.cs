@@ -12,6 +12,8 @@ public class ScoreCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("ScoreCounter");
+
         scoreCounter = GetComponent<Text>();
         scoreAmount = 0;
     }

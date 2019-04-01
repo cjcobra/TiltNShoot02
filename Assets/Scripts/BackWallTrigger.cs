@@ -7,7 +7,7 @@ public class BackWallTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log("BackWallTrigger");
     }
 
     // Update is called once per frame

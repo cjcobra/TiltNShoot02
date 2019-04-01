@@ -12,6 +12,8 @@ public class CollectableOnTouch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("CollectableOnTouch");
+
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         gc.collectable++;
     }

@@ -11,7 +11,8 @@ public class TouchShootAngle3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("TouchShootAngle3");
+
     }
 
     // Update is called once per frame

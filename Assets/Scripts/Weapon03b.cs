@@ -12,6 +12,7 @@ public class Weapon03b : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Weapon03b");
 
     }
 
@@ -34,7 +35,7 @@ public class Weapon03b : MonoBehaviour
         {
             targetPosition = hit.point;
          //   this.transform.LookAt(targetPosition);
-            Debug.Log(hit);
+         //   Debug.Log(hit);
 
             Instantiate(bulletPrefab, firePoint.position, Quaternion.LookRotation(ray.direction));
 

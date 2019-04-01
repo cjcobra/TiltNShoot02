@@ -11,11 +11,13 @@ public class Weapon03 : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Weapon03");
+
         //add an onclick event to your UI button
- // CJ       fireButton.onClick.AddListener(() => Shoot());
+        // CJ       fireButton.onClick.AddListener(() => Shoot());
     }
 
- //    Update is called once per frame
+    //    Update is called once per frame
     void Update()
     {
         if(Input.GetButtonDown("Fire1"))

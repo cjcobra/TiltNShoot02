@@ -6,6 +6,12 @@ public class SpawnScript : MonoBehaviour
 {
     public GameObject bulletball;
 
+    private void Start()
+    {
+        Debug.Log("SpawnScript");
+
+    }
+
     // Update is called once per frame
     void Update()
     {

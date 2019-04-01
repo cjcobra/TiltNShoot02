@@ -16,7 +16,12 @@ public class Bomb : MonoBehaviour
 
     public GameObject explosionEffect;
 
-  
+    private void Start()
+    {
+        Debug.Log("Bomb");
+
+    }
+
     void OnCollisionEnter (Collision col)
     {
         if(col.gameObject.tag == "BulletBall")

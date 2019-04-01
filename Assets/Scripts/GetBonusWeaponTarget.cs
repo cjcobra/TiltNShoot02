@@ -15,6 +15,8 @@ public class GetBonusWeaponTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("GetBonusWeaponTarget");
+
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         gc.collectable++;
     }
@@ -23,10 +25,17 @@ public class GetBonusWeaponTarget : MonoBehaviour
     {
         if (other.CompareTag("BulletBall"))
         {
-            
+
+            Debug.Log("GBWT_Hit");
+
+
            GetComponent<MeshRenderer>().enabled=false;
            GetComponent<Collider>().enabled = false;
            
+
+
+
+
             GameObject impactGo = Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(impactGo, 2f);
             source.PlayOneShot(explodeblock);

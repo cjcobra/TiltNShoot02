@@ -9,7 +9,8 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("TimeManager");
+
     }
 
     // Update is called once per frame

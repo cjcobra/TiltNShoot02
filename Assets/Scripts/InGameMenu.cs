@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class InGameMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        Debug.Log("InGameMenu");
+
+    }
 
     public void MainMenuInGame()
     {

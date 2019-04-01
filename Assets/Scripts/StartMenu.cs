@@ -53,7 +53,9 @@ public class StartMenu : MonoBehaviour
 
     private void Start()
     {
-        ChangeBulletBallSkin (CompleteGameManager.Instance.currentSkinIndex);
+        Debug.Log("StartMenu");
+
+        ChangeBulletBallSkin(CompleteGameManager.Instance.currentSkinIndex);
         currencyText.text = "Currency:" + CompleteGameManager.Instance.currency.ToString();
         //cameraTransform = Camera.main.transform;
         

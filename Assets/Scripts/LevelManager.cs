@@ -19,8 +19,12 @@ public class LevelManager : MonoBehaviour
     public float silverTime;
     public float goldTime;
 
+    // private float finalEndTime;
+
     private void Start ()
     {
+        Debug.Log("LevelManager");
+
         instance = this;
         pauseMenu.SetActive(false);
         endMenu.SetActive(false);
@@ -57,8 +61,12 @@ public class LevelManager : MonoBehaviour
 
     public void Victory()
     {
+        // Debug.Log(levelDuration);
 
-        foreach(Transform t in endMenu.transform.parent)
+        // Stop Timer
+        Time.timeScale = 0;
+
+        foreach (Transform t in endMenu.transform.parent)
         {
             t.gameObject.SetActive(false);
         }
@@ -72,19 +80,21 @@ public class LevelManager : MonoBehaviour
 
         if (levelDuration < goldTime)
         {
-            CompleteGameManager.Instance.currency += 150;
+         // cj   CompleteGameManager.Instance.currency += 150;
             endTimerText.color = Color.yellow;
         }
         else if (levelDuration < silverTime)
         {
-            CompleteGameManager.Instance.currency += 75;
+         // cj   CompleteGameManager.Instance.currency += 75;
             endTimerText.color = Color.gray;
         }
         else
         {
-            CompleteGameManager.Instance.currency += 30;
+         // cj   CompleteGameManager.Instance.currency += 30;
             endTimerText.color = new Color (0.8f,0.5f,0.2f,1.0f);
         }
+
+
         CompleteGameManager.Instance.Save();
 
         string saveString = "";

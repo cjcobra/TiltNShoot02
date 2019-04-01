@@ -13,19 +13,21 @@ public class MegaCannonWeapon : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("MegaCannonWeapon");
+
         //add an onclick event to your UI button
         fireButton.onClick.AddListener(() => Shoot());
     }
 
     // Update is called once per frame
-   // void Update()
-  //  {
-   //     if(Input.GetButtonDown("Fire1"))
-   //     {
-   //         Shoot();
+    // void Update()
+    //  {
+    //     if(Input.GetButtonDown("Fire1"))
+    //     {
+    //         Shoot();
     //    }
 
-   // }
+    // }
 
     void Shoot()
     {

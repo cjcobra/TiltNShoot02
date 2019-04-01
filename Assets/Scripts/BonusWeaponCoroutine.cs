@@ -20,6 +20,8 @@ public class BonusWeaponCoroutine : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("BonusWeaonCorountine");
+
         BonusWeapon.SetActive(false);
         BonusWeaponButton.SetActive(false);
 
@@ -29,11 +31,12 @@ public class BonusWeaponCoroutine : MonoBehaviour
     {
         if (other.CompareTag("BulletBall"))
         {
+            Debug.Log("BWC_Collider Hit");
 
             // Destroy(gameObject);
             source.PlayOneShot(NewWeapon);
             BonusWeapon.SetActive(true);
-            BonusWeaponButton.SetActive(true);
+            BonusWeaponButton.SetActive(true);  //////// MUST PUSH BUTTON
             WeaponButton.SetActive(false);
             Weapon.SetActive(false);
             bonusweapontimer.StartTimer();

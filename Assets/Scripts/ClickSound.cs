@@ -18,6 +18,8 @@ public class ClickSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("ClickSound");
+
         gameObject.AddComponent<AudioSource>();
         source.clip = sound;
         source.playOnAwake = false;

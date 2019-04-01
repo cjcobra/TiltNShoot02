@@ -6,6 +6,12 @@ public class LevelChanger : MonoBehaviour
 {
     public Animator animator;
 
+    private void Start()
+    {
+        Debug.Log("LevelChanger");
+
+    }
+
     // Update is called once per frame
     void Update()
     {

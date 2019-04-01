@@ -14,6 +14,8 @@ public class ClampRectTransform : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("ClampRectTransform");
+
         rt = GetComponent<RectTransform>();
     }
 

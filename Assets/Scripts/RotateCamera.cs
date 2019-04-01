@@ -12,6 +12,8 @@ public class RotateCamera : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Debug.Log("RotateCamera");
+
         //check if touch device
         if (SystemInfo.deviceType == DeviceType.Handheld)
         {

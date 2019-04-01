@@ -8,6 +8,12 @@ public class HexGoalScore : MonoBehaviour
     public AudioSource source;
     public AudioClip explodehex;
 
+    private void Start()
+    {
+        Debug.Log("HexGoalScore");
+
+    }
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.tag.Equals("BulletBall"))

@@ -18,6 +18,8 @@ public class bulletBall3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("bulletBall3");
+
         //countdown = delay;
         rb.velocity = transform.forward * speed;
     }

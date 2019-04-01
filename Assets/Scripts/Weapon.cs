@@ -11,6 +11,8 @@ public class Weapon : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Weapon");
+
         //add an onclick event to your UI button
         fireButton.onClick.AddListener(() => Shoot());
     }

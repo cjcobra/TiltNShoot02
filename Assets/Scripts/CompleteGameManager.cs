@@ -11,6 +11,11 @@ public class CompleteGameManager : MonoBehaviour
     public int currency = 0;
     public int skinAvailability = 1;
 
+    private void Start()
+    {
+        Debug.Log("CompleteGameManager");
+
+    }
 
     private void Awake()
     {
@@ -34,6 +39,7 @@ public class CompleteGameManager : MonoBehaviour
 
     public void Save()
     {
+        Debug.Log("CGM_Save");
         PlayerPrefs.SetInt("CurrentSkin", currentSkinIndex);
         PlayerPrefs.SetInt("Currency", currency);
         PlayerPrefs.SetInt("SkinAvailability", skinAvailability);

@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class WinBox : MonoBehaviour
 {
+
+    private void Start()
+    {
+        Debug.Log("WinBox");
+
+    }
     private void OnTriggerEnter(Collider col)
     {
         if (col.tag == "BulletBall")

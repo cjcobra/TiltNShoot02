@@ -18,6 +18,8 @@ public class MegaCannonBulletBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("MegaCannonBulletBall");
+
         //countdown = delay;
         rb.velocity = transform.forward * speed;
     }
