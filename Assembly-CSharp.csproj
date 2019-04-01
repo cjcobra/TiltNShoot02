@@ -1109,10 +1109,13 @@
     <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Scripts\SwitchObject.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\TouchShootAngle2.cs" />
+    <Compile Include="Assets\Scripts\TouchShootAngle3.cs" />
     <Compile Include="Assets\Scripts\TreasureTrigger.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />
     <Compile Include="Assets\Scripts\Weapon02.cs" />
     <Compile Include="Assets\Scripts\Weapon03.cs" />
+    <Compile Include="Assets\Scripts\Weapon03b.cs" />
     <Compile Include="Assets\Scripts\WinBox.cs" />
     <Compile Include="Assets\SimpleSpectrum\Demos\Demo Assets\SoundFileOpener.cs" />
     <Compile Include="Assets\SimpleSpectrum\Scripts\OutputVolume.cs" />
@@ -1214,6 +1217,7 @@
     <Compile Include="Assets\TextMeshPro_Playmaker-master\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesLighting.cs" />
     <Compile Include="Assets\TextMeshPro_Playmaker-master\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesOutline.cs" />
     <Compile Include="Assets\TextMeshPro_Playmaker-master\uguiActions\Shaders\setTextmeshProUGUIShaderPropertiesUnderlay.cs" />
+    <Compile Include="Assets\TouchShootAngle.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\_MK\MKGlow\Shader\Variants_Luminance\MK_LuminanceEmissive.shader" />
     <None Include="Assets\Sci-Fi Game UI 8\MAIN\Readme.txt" />
