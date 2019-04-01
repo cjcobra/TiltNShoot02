@@ -22,4 +22,12 @@ public class bulletBall3 : MonoBehaviour
         rb.velocity = transform.forward * speed;
     }
 
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag.Equals("BackWall"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
