@@ -7,7 +7,7 @@ public class BackWallTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("BackWallTrigger");
+
     }
 
     // Update is called once per frame
@@ -16,5 +16,11 @@ public class BackWallTrigger : MonoBehaviour
 
     }
 
-
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag.Equals("BulletBall"))
+        {
+         //   Destroy(gameObject);
+        }
+    }
 }
