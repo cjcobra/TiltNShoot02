@@ -17,7 +17,7 @@ public class MegaWeapon01 : MonoBehaviour
         Debug.Log("MegaWeapon01");
 
         //add an onclick event to your UI button
-        //fireButton.onClick.AddListener(() => Shoot());
+        // fireButton.onClick.AddListener(() => Shoot());
         //  Shoot();
     }
 
