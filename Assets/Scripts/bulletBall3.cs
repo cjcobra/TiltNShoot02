@@ -5,7 +5,7 @@ using UnityEngine;
 public class bulletBall3 : MonoBehaviour
 {
    // public float delay = .3f;
-    public float speed = 20f;
+    public float speed = 10f;  //cj 20f
    // public float force = 700f;
    // public float radius = 5f;
     public Rigidbody rb;

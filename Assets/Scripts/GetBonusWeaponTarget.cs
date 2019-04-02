@@ -25,17 +25,11 @@ public class GetBonusWeaponTarget : MonoBehaviour
     {
         if (other.CompareTag("BulletBall"))
         {
-
             Debug.Log("GBWT_Hit");
-
 
            GetComponent<MeshRenderer>().enabled=false;
            GetComponent<Collider>().enabled = false;
            
-
-
-
-
             GameObject impactGo = Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(impactGo, 2f);
             source.PlayOneShot(explodeblock);

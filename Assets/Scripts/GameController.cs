@@ -8,16 +8,12 @@ public class GameController : MonoBehaviour
     public int collectable = 0;
     public bool collectedAll = false;
 
-    private void Start()
-    {
-        Debug.Log("GameController");
 
-    }
 
     // Update is called once per frame
     void Update()
     {
-      //  Debug.Log(collectable);
+        Debug.Log(collectable);
 
         if (collectable <= 0)
         {
@@ -31,4 +27,9 @@ public class GameController : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        Debug.Log("GameController");
+
+    }
 }

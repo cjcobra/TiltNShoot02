@@ -39,7 +39,7 @@ public class CompleteGameManager : MonoBehaviour
 
     public void Save()
     {
-        Debug.Log("CGM_Save");
+       // CJ Debug.Log("CGM_Save");
         PlayerPrefs.SetInt("CurrentSkin", currentSkinIndex);
         PlayerPrefs.SetInt("Currency", currency);
         PlayerPrefs.SetInt("SkinAvailability", skinAvailability);

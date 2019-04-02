@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MegaWeapon01 : MonoBehaviour
 {
-    public Button fireButton;
+  // CJ  public Button fireButton;
     public Transform MegaCannonFirepoint01;
     public Transform MegaCannonFirepoint02;
     public Transform MegaCannonFirepoint03;
