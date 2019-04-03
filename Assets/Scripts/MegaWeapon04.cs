@@ -1,19 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class MegaWeapon01 : MonoBehaviour
+public class MegaWeapon04 : MonoBehaviour
 {
     public Transform MegaCannonFirepoint01;
-    public Transform MegaCannonFirepoint02;
-    public Transform MegaCannonFirepoint03;
     public GameObject bulletPrefab;
     Vector3 targetPosition;
 
     void Start()
     {
-        Debug.Log("MegaWeapon01");
+        Debug.Log("MegaWeapon04");
 
     }
 
@@ -35,8 +32,9 @@ public class MegaWeapon01 : MonoBehaviour
 
             // shooting logic
             Instantiate(bulletPrefab, MegaCannonFirepoint01.position, Quaternion.LookRotation(ray.direction));
-            Instantiate(bulletPrefab, MegaCannonFirepoint02.position, Quaternion.LookRotation(ray.direction));
-            Instantiate(bulletPrefab, MegaCannonFirepoint03.position, Quaternion.LookRotation(ray.direction));
+
         }
     }
 }
+
+

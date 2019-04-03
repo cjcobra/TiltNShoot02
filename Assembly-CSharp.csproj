@@ -1103,6 +1103,15 @@
     <Compile Include="Assets\Scripts\MegaCannonBulletBall.cs" />
     <Compile Include="Assets\Scripts\MegaCannonWeapon.cs" />
     <Compile Include="Assets\Scripts\MegaWeapon01.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon02.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon03.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon04.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon05.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon06.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon07.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon08.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon09.cs" />
+    <Compile Include="Assets\Scripts\MegaWeapon10.cs" />
     <Compile Include="Assets\Scripts\RotateCamera.cs" />
     <Compile Include="Assets\Scripts\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\SetCountDown.cs" />

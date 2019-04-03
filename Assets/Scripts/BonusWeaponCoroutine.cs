@@ -20,7 +20,10 @@ public class BonusWeaponCoroutine : MonoBehaviour
 
     // CJ
     public float megaWeaponTimer = 5f;
-   // float timer2;
+
+    private static BonusWeaponCoroutine instance;
+    public static BonusWeaponCoroutine Instance { get { return instance; } }
+
 
 
     private void Start()
@@ -37,10 +40,12 @@ public class BonusWeaponCoroutine : MonoBehaviour
     {
         if (other.CompareTag("BulletBall"))
         {
+
             Debug.Log("BWC_Collider Hit");
 
+            
             // CJ
-            StartMegaWeapon01();
+          //  StartMegaWeapon01();  /////////////////////////// WORKS
 
             // Destroy(gameObject);
             source.PlayOneShot(NewWeapon);
@@ -66,7 +71,8 @@ public class BonusWeaponCoroutine : MonoBehaviour
         Destroy(gameObject);
     }
 */
-    void StartMegaWeapon01()
+/////////// Mega Weapon 01
+    public void StartMegaWeapon01()
     {
         Debug.Log("StartMegaWeapon01");
 
