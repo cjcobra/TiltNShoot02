@@ -1075,6 +1075,7 @@
     <Compile Include="Assets\PlayMaker\Actions\Web\WWWObject.cs" />
     <Compile Include="Assets\PlayMaker\FsmProcessor.cs" />
     <Compile Include="Assets\PlayMaker\UpdateHelper.cs" />
+    <Compile Include="Assets\Scripts\_GameNotes.cs" />
     <Compile Include="Assets\Scripts\BackWallTrigger.cs" />
     <Compile Include="Assets\Scripts\BlockPoints.cs" />
     <Compile Include="Assets\Scripts\Bomb.cs" />

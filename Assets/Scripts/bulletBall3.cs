@@ -14,8 +14,6 @@ public class bulletBall3 : MonoBehaviour
 
     public GameObject explosionEffect;
 
-  //  public BonusWeaponCoroutine scriptBonusWeaonCoroutine;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,23 +30,6 @@ public class bulletBall3 : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.gameObject.tag == "MegaWeaponBlock01")   // else if
-        {
-            Debug.Log("BulletBall3, MegaWeaponBlock01 Hit");  // This shows up in the console
-
-            BonusWeaponCoroutine.Instance.StartMegaWeapon01();  // WONT FUCKING CALL THIS FUNCTION!!!!!!!!
-        }
-
-
-
-
-
-
-
-
     }
-
     
-
-
 }
