@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     public int collectable = 0;
     public bool collectedAll = false;
 
+   // GameObject obj;
+
 
 
     // Update is called once per frame

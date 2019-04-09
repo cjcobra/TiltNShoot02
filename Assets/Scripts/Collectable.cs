@@ -16,6 +16,15 @@ public class Collectable : MonoBehaviour
 
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         gc.collectable++;
+
+        ScoreCounter.scoreAmount = gc.collectable;  // cj new
+
+    }
+
+    private void Update()
+    {
+        ScoreCounter.scoreAmount = gc.collectable;  // cj new
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +35,7 @@ public class Collectable : MonoBehaviour
             GameObject impactGo = Instantiate(explosionEffect, transform.position, transform.rotation);
             Destroy(impactGo, 2f);
             source.PlayOneShot(explodeblock);
-            ScoreCounter.scoreAmount += 1;
+            // cj   ScoreCounter.scoreAmount += 1;
            gc.collectable--;
 
         }

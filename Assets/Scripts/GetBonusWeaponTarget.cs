@@ -8,7 +8,7 @@ public class GetBonusWeaponTarget : MonoBehaviour
 
     public AudioSource source;
     public AudioClip explodeblock;
-    GameController gc;
+   // GameController gc;
     public GameObject pickupEffect;
 
 
@@ -17,8 +17,8 @@ public class GetBonusWeaponTarget : MonoBehaviour
     {
         Debug.Log("GetBonusWeaponTarget");
 
-        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        gc.collectable++;
+       // gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+       // gc.collectable++;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -34,7 +34,7 @@ public class GetBonusWeaponTarget : MonoBehaviour
             Destroy(impactGo, 2f);
             source.PlayOneShot(explodeblock);
             ScoreCounter.scoreAmount += 1;
-            gc.collectable--;
+           // gc.collectable--;
             
             
         }

@@ -14,13 +14,17 @@ public class ScoreCounter : MonoBehaviour
     {
         Debug.Log("ScoreCounter");
 
+
         scoreCounter = GetComponent<Text>();
-        scoreAmount = 0;
+      // cj  scoreAmount = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreCounter.text = "Score: " + scoreAmount;
+
+        Debug.Log(scoreAmount);
+
+        scoreCounter.text = "Blocks: " + scoreAmount;
     }
 }
